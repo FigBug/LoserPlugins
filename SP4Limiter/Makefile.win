@@ -1,0 +1,43 @@
+# Project: VST Base
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = 
+OBJ  = AVst.o AVstMain.o ../vstsdk2.3/source/common/AudioEffect.o ../vstsdk2.3/source/common/audioeffectx.o $(RES)
+LINKOBJ  = AVst.o AVstMain.o ../vstsdk2.3/source/common/AudioEffect.o ../vstsdk2.3/source/common/audioeffectx.o $(RES)
+LIBS =  -L"C:/GTK/LIB" -lkernel32 -luser32 -lgdi32 -lwinspool -lcomdlg32 -ladvapi32 -lshell32 -lole32 -loleaut32 -luuid  -s 
+INCS =  -I"C:/GTK/INCLUDE"  -I"C:/GTK/INCLUDE/GTK-2.0"  -I"C:/GTK/INCLUDE/GLIB-2.0"  -I"C:/GTK/INCLUDE/PANGO-1.0"  -I"C:/GTK/INCLUDE/CAIRO"  -I"C:/GTK/INCLUDE/ATK-1.0"  -I"C:/GTK/INCLUDE/GTKGLEXT-1.0"  -I"C:/GTK/LIB/GTK-2.0/INCLUDE"  -I"C:/GTK/LIB/GLIB-2.0/INCLUDE"  -I"C:/GTK/LIB/GTKGLEXT-1.0/INCLUDE"  -I"C:/GTK/INCLUDE/LIBGLADE-2.0"  -I"C:/GTK/INCLUDE/LIBXML2"  -I"../vstsdk2.3/source/common" 
+CXXINCS =  -I"C:/GTK/INCLUDE"  -I"C:/GTK/INCLUDE/GTK-2.0"  -I"C:/GTK/INCLUDE/GLIB-2.0"  -I"C:/GTK/INCLUDE/PANGO-1.0"  -I"C:/GTK/INCLUDE/CAIRO"  -I"C:/GTK/INCLUDE/ATK-1.0"  -I"C:/GTK/INCLUDE/GTKGLEXT-1.0"  -I"C:/GTK/LIB/GTK-2.0/INCLUDE"  -I"C:/GTK/LIB/GLIB-2.0/INCLUDE"  -I"C:/GTK/LIB/GTKGLEXT-1.0/INCLUDE"  -I"C:/GTK/INCLUDE/LIBGLADE-2.0"  -I"C:/GTK/INCLUDE/LIBXML2"  -I"../vstsdk2.3/source/common" 
+BIN  = SP4Limiter.dll
+CXXFLAGS = $(CXXINCS) -DBUILDING_DLL=1 -D__GNUWIN32__ -mcpu=pentium -D_M_IX86=500 -W -DWIN32 -DNDEBUG -D_WINDOWS -DWINDOWS=1   -O2
+CFLAGS = $(INCS) -DBUILDING_DLL=1 -D__GNUWIN32__ -mcpu=pentium -D_M_IX86=500 -W -DWIN32 -DNDEBUG -D_WINDOWS -DWINDOWS=1   -O2
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before SP4Limiter.dll all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+DLLWRAP=dllwrap.exe
+DEFFILE=libSP4Limiter.def
+STATICLIB=libSP4Limiter.a
+
+$(BIN): $(LINKOBJ)
+	$(DLLWRAP) --output-def $(DEFFILE) --driver-name c++ --implib $(STATICLIB) $(LINKOBJ) $(LIBS) -o $(BIN)
+
+AVst.o: AVst.cpp
+	$(CPP) -c AVst.cpp -o AVst.o $(CXXFLAGS)
+
+AVstMain.o: AVstMain.cpp
+	$(CPP) -c AVstMain.cpp -o AVstMain.o $(CXXFLAGS)
+
+../vstsdk2.3/source/common/AudioEffect.o: ../vstsdk2.3/source/common/AudioEffect.cpp
+	$(CPP) -c ../vstsdk2.3/source/common/AudioEffect.cpp -o ../vstsdk2.3/source/common/AudioEffect.o $(CXXFLAGS)
+
+../vstsdk2.3/source/common/audioeffectx.o: ../vstsdk2.3/source/common/audioeffectx.cpp
+	$(CPP) -c ../vstsdk2.3/source/common/audioeffectx.cpp -o ../vstsdk2.3/source/common/audioeffectx.o $(CXXFLAGS)

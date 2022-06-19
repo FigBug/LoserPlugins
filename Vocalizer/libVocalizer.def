@@ -1,0 +1,3 @@
+; dlltool --base-file C:\DOCUME~1\USER\LOCALS~1\Temp/cca02000.base --output-exp Vocalizer.exp --dllname Vocalizer.dll --output-def libVocalizer.def --exclude-symbol=DllMainCRTStartup@12 --def C:\DOCUME~1\USER\LOCALS~1\Temp/cca02000.def --output-lib libVocalizer.a
+EXPORTS
+	main @ 1

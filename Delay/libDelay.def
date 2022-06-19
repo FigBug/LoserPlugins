@@ -1,0 +1,3 @@
+; dlltool --base-file C:\DOCUME~1\USER\LOCALS~1\Temp/cca00736.base --output-exp Delay.exp --dllname Delay.dll --output-def libDelay.def --exclude-symbol=DllMainCRTStartup@12 --def C:\DOCUME~1\USER\LOCALS~1\Temp/cca00736.def --output-lib libDelay.a
+EXPORTS
+	main @ 1

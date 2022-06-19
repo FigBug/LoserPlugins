@@ -1,0 +1,42 @@
+DVCL: DVCLite.dll - Digtial Versatile Compressor LITE // DVCL
+DVCS: DVC.dll - Digtial Versatile Compressor STANDARD // DVCS 
+DVCM: DVCMaster.dll - Digtial Versatile Compressor MASTER //DVCM
+
+
+SP1L: SP1Limiter.dll - Simple Peak-1 Limiter
+SP2L: SP2Limiter.dll - Simple Peak-2 Limiter
+SP3L: SP3Limiter.dll - Simple Peak-3 Limiter
+SP4L: SP4Limiter.dll - Simple Peak-4 Limiter // SP4L
+
+0XMX: 0XMaximizer.dll - 0-X Maximizer
+
+DITH: Dither.dll - Dither // DITH
+
+3BEQ: 3BandEQ.dll - 3-Band EQ // 3BEQ
+
+3BSP: 3BandSplitter.dll - 3-Band Splitter // 3BSP
+3BJN: 3BandJoiner.dll - 3-Band Joiner // 3BJN
+
+
+PEQS: ParaEQ.dll - Parametric EQ Standart // PAEQ
+PEQL: ParaEQ.dll - Parametric EQ Standart
+
+
+SATU: Saturation.dll - Saturation // SATU
+
+XITE: Exciter.dll - Exciter // XITE
+
+DLAY: Delay.dll - Delay // DLAY
+
+MSDE: MSDecoder.dll - M/S Decoder // MSDE
+MSNC: MSEncoder.dll - M/S Encoder //MSNC
+
+STRO: Stereo.dll - Stereo Processor // STRO
+
+
+MISC STUFF:
+5869: DVCLiteM.dll
+5870: DVCM.dll
+5871: DVCMasterM.dll
+
+

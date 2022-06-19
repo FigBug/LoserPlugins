@@ -1,0 +1,239 @@
+VST Bundle Source Code Release
+==============================
+
+Files:
+.
+├── 0XMaximizer
+│   ├── AVst.cpp
+│   ├── AVst.hpp
+│   ├── AVstMain.cpp
+│   ├── lib0xMaximizer.def
+│   └── Makefile.win
+├── 3BandEQ
+│   ├── AVst.cpp
+│   ├── AVst.hpp
+│   ├── AVstMain.cpp
+│   ├── lib3BandEQ.def
+│   └── Makefile.win
+├── 3BandJoiner
+│   ├── AVst.cpp
+│   ├── AVst.hpp
+│   ├── AVstMain.cpp
+│   ├── lib3BandJoiner.def
+│   └── Makefile.win
+├── 3BandSplitter
+│   ├── AVst.cpp
+│   ├── AVst.hpp
+│   ├── AVstMain.cpp
+│   ├── lib3BandSplitter.def
+│   └── Makefile.win
+├── 50HzKicker
+│   ├── AVst.cpp
+│   ├── AVst.hpp
+│   ├── AVstMain.cpp
+│   ├── lib50HzKicker.def
+│   └── Makefile.win
+├── AP1Limiter
+│   ├── AVst.cpp
+│   ├── AVst.hpp
+│   ├── AVstMain.cpp
+│   ├── libAP1Limiter.def
+│   └── Makefile.win
+├── COPYING
+├── Delay
+│   ├── AVst.cpp
+│   ├── AVst.hpp
+│   ├── AVstMain.cpp
+│   ├── libDelay.def
+│   └── Makefile.win
+├── Dither
+│   ├── AVst.cpp
+│   ├── AVst.hpp
+│   ├── AVstMain.cpp
+│   ├── libDither.def
+│   └── Makefile.win
+├── DVCLite
+│   ├── AVst.cpp
+│   ├── AVst.hpp
+│   ├── AVstMain.cpp
+│   ├── libDVCLite.def
+│   └── Makefile.win
+├── DVCLiteMeter
+│   ├── AVst.cpp
+│   ├── AVst.hpp
+│   └── AVstMain.cpp
+├── DVCMaster
+│   ├── AVst.cpp
+│   ├── AVst.hpp
+│   ├── AVstMain.cpp
+│   ├── libDVC.def
+│   ├── libDVCMaster.def
+│   └── Makefile.win
+├── DVCMasterMeter
+│   ├── AVst.cpp
+│   ├── AVst.hpp
+│   └── AVstMain.cpp
+├── DVCMasterOLD
+│   ├── AVst.cpp
+│   ├── AVst.hpp
+│   ├── AVstMain.cpp
+│   ├── libDVCMaster.def
+│   └── Makefile.win
+├── DVCStandard
+│   ├── AVst.cpp
+│   ├── AVst.hpp
+│   ├── AVstMain.cpp
+│   ├── libDVC.def
+│   └── Makefile.win
+├── DVCStandardMeter
+│   ├── AVst.cpp
+│   ├── AVst.hpp
+│   └── AVstMain.cpp
+├── Exciter
+│   ├── AVst.cpp
+│   ├── AVst.hpp
+│   ├── AVstMain.cpp
+│   ├── libExciter.def
+│   └── Makefile.win
+├── MSDecoder
+│   ├── AVst.cpp
+│   ├── AVst.hpp
+│   ├── AVstMain.cpp
+│   ├── libMSDecoder.def
+│   └── Makefile.win
+├── MSEncoder
+│   ├── AVst.cpp
+│   ├── AVst.hpp
+│   ├── AVstMain.cpp
+│   ├── libMSEncoder.def
+│   └── Makefile.win
+├── ParaEQLite
+│   ├── AVst.cpp
+│   ├── AVst.hpp
+│   ├── AVstMain.cpp
+│   ├── libParaEQLite.def
+│   └── Makefile.win
+├── ParaEQMaster
+│   ├── AVst.cpp
+│   ├── AVst.hpp
+│   ├── AVstMain.cpp
+│   ├── libParaEQMaster.def
+│   └── Makefile.win
+├── ParaEQStandard
+│   ├── AVst.cpp
+│   ├── AVst.hpp
+│   ├── AVstMain.cpp
+│   ├── libParaEQ.def
+│   └── Makefile.win
+├── PDComp1
+│   ├── AVst.cpp
+│   ├── AVst.hpp
+│   ├── AVstMain.cpp
+│   ├── libDVCLite.def
+│   ├── libPDComp1.def
+│   └── Makefile.win
+├── README
+├── Readme.txt
+├── Saturation
+│   ├── AVst.cpp
+│   ├── AVst.hpp
+│   ├── AVstMain.cpp
+│   ├── libSaturation.def
+│   └── Makefile.win
+├── SimpleVerb
+│   ├── AVst.cpp
+│   ├── AVst.hpp
+│   ├── AVstMain.cpp
+│   ├── libSimpleVerb.def
+│   └── Makefile.win
+├── SP30Limiter
+│   ├── AVst.cpp
+│   ├── AVst.hpp
+│   ├── AVstMain.cpp
+│   ├── libSP30Limiter.def
+│   ├── libSP3Limiter.def
+│   ├── libSP4Limiter.def
+│   └── Makefile.win
+├── SP4Limiter
+│   ├── AVst.cpp
+│   ├── AVst.hpp
+│   ├── AVstMain.cpp
+│   ├── libSP4Limiter.def
+│   └── Makefile.win
+├── SP7Limiter
+│   ├── AVst.cpp
+│   ├── AVst.hpp
+│   ├── AVstMain.cpp
+│   ├── libSP7Limiter.def
+│   └── Makefile.win
+├── SP8Limiter
+│   ├── AVst.cpp
+│   ├── AVst.hpp
+│   ├── AVstMain.cpp
+│   ├── libSP8Limiter.def
+│   └── Makefile.win
+├── StereoEnhancer
+│   ├── AVst.cpp
+│   ├── AVst.hpp
+│   └── AVstMain.cpp
+├── StereoProcessor
+│   ├── AVst.cpp
+│   ├── AVst.hpp
+│   ├── AVstMain.cpp
+│   ├── libStereo.def
+│   └── Makefile.win
+├── TransientShaper
+│   ├── AVst.cpp
+│   ├── AVst.hpp
+│   ├── AVstMain.cpp
+│   ├── libtransientShaper.def
+│   └── Makefile.win
+├── UniqueIDs.txt
+└── Vocalizer
+    ├── AVst.cpp
+    ├── AVst.hpp
+    ├── AVstMain.cpp
+    ├── libDVCMaster.def
+    ├── libVocalizer.def
+    └── Makefile.win
+
+
+License and copyright:
+	see COPYING
+
+
+End-user manual:
+	see Readme.txt
+
+
+KNOWN ISSUES:
+	A part from being the work of a total amateur there is the
+	following known bug:
+	* VST::setParameter() is assumed to be called while in VST::process()
+	  However this is (especially in modern MP systems not the case).
+	  The VST SDK really helps avoiding such pitfalls ... NOT.
+	  The bug manifests only in VSTs that use buffers. These buffers
+	  are reallocated (to fit the new size) in VST::setParameter(),
+	  but if the old buffer is still used in VST::process() the
+	  VST will inevitably cause an access violation.
+	  Anyway in 6 years 0 bug reports resulted from this ... not saying
+	  it is OK, but it is rare.
+	  Affected plugins (list might be incomplete):
+	  	0xMaximzer
+	  	Delay
+	  	DVCMaster*
+	  	DVCStandard*
+	  	SimpleVerb
+
+
+UNIQUE VST IDs REGISTERED WITH STEINBERG:
+	see UniqueIDs.txt
+	Please register and use your own unique IDs if you make changes that
+	break compatibility. Thank you.
+
+
+PLEASE DO NOT USE THIS CODE AS EXAMPLE NOR ROLE MODEL FOR GOOD CODING NOR GOOD
+DSP WORK. RATHER USE THEM AS AN EXAMPLE, MOTIVATION AND INSPIRATION THAT
+EVEN WITH PRACTICALLY NO KNOWLEDGE IN DSP AND CODING GOOD EFFECT PLUGINS
+CAN BE CREATED.
+
